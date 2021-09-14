@@ -6,18 +6,15 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.Amiswiz1CRM.GenericLibs.BaseTest;
 
+public class CustomViewPage {
+	@FindBy(xpath = "//input[@value=\"New Lead\"]")
+	private WebElement newLeadsBtn;
 
+	public CustomViewPage() {
+		PageFactory.initElements(BaseTest.driver, this);
+	}
 
-public class CustomViewPage
-   {
-@FindBy(xpath = "//input[@value=\"New Lead\"]") private WebElement newLeadsBtn;
-   
-   public CustomViewPage()
-   {
-	PageFactory.initElements(BaseTest.driver,this);
-   }
-   public void ClickNewLeadBtn()
-   {
-	   newLeadsBtn.click();
-   }
+	public void ClickNewLeadBtn() {
+		newLeadsBtn.click();
+	}
 }
