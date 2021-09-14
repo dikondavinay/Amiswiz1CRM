@@ -1,6 +1,5 @@
 package com.Amiswiz1CRM.Testscript;
 
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import com.Amiswiz1CRM.GenericLibs.BaseTest;
@@ -45,6 +44,9 @@ public class CreateLeadTest extends BaseTest {
 		//wait.until(ExpectedConditions.titleContains(flib.readPropertyData(PROP_PATH, "leadDatailsTitle")));
 		wlib.verify(wlib.getpageTitle(), flib.readPropertyData(PROP_PATH, "leadDatailsTitle"), "Lead Details Page");
 
+		// second time changes..
+		
+		
 	}
 
 }
